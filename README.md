@@ -75,25 +75,38 @@ node scripts/generate-resume.mjs
 3. 清理浏览器站点数据会清空后台修改，站点会回到仓库中的默认内容。
 4. 管理密码只做界面层演示，不是真正的安全机制；任何人都可以打开 `/admin` 并修改自己浏览器里的数据。
 
-## 部署到 Cloudflare Pages
+## 部署到 Cloudflare
+
+仓库根目录提供 `wrangler.jsonc`，其中 `assets.not_found_handling = "single-page-application"` 负责 SPA 路由回退。因此项目不再使用 `_redirects`：Cloudflare Workers 的静态资源校验会把通配符回退规则判定为无限循环。
+
+### 方式一：Workers Builds（当前部署方式）
 
 1. 将仓库推送到 GitHub（本项目的目标仓库：`https://github.com/LongPPPP/profile`）。
-2. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com/) → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**。
+2. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com/) → **Workers & Pages** → **Create** → **Workers** → **Connect to Git**。
 3. 选择仓库 `LongPPPP/profile`，构建配置如下：
-   - Framework preset：`Vite`
    - Build command：`npm run build`
-   - Build output directory：`dist`
+   - Deploy command：`npx wrangler deploy`
+   - Root directory：`/`
    - Node version：`22`（仓库已提供 `.nvmrc`）
-4. 保存并部署，完成后会得到一个 `https://<project>.pages.dev` 域名。
-5. `public/_redirects` 已配置 SPA 回退（`/* /index.html 200`），直接访问 `/projects/xxx` 等路由不会 404。
+4. 保存并部署，完成后会得到一个 `https://<project>.<subdomain>.workers.dev` 域名。
 
-也可以使用 Vercel：导入仓库后，Framework 选择 Vite，Build Command 为 `npm run build`，Output Directory 为 `dist`。
+### 方式二：Cloudflare Pages
+
+在 Pages 入口连接同一个仓库，Build command 填 `npm run build`，Output directory 填 `dist`。Pages 不读取 `wrangler.jsonc` 的 `assets` 配置，如果使用 Pages，需要在 `public/` 中额外添加 `_redirects`：
+
+```text
+/* /index.html 200
+```
+
+注意：该文件会让 Workers 部署失败，两种平台不要同时配置。
+
+Vercel 也可以部署：Framework 选择 Vite，Build Command 为 `npm run build`，Output Directory 为 `dist`。
 
 ## 目录结构
 
 ```text
 profile/
-├─ public/                 # 静态资源、默认头像/简历、_redirects
+├─ public/                 # 静态资源、默认头像/简历
 ├─ scripts/                # 辅助脚本（占位简历 PDF 生成）
 ├─ src/
 │  ├─ components/          # 展示端与后台组件
