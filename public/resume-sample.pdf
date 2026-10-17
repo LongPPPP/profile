@@ -1,0 +1,66 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 2549 >>
+stream
+BT 0 0 0 rg /F2 28 Tf 1 0 0 1 56 776 Tm (LONG) Tj ET
+BT 0.35 0.35 0.35 rg /F1 12 Tf 1 0 0 1 56 748 Tm (Frontend Developer / Computer Science Student) Tj ET
+BT 0.35 0.35 0.35 rg /F1 9 Tf 1 0 0 1 56 730 Tm (Dalian, China  |  hello@example.com  |  github.com/LongPPPP) Tj ET
+0.86 0.86 0.86 RG 0.7 w 56 714 m 539 714 l S
+BT 0 0 0 rg /F2 10.5 Tf 1 0 0 1 56 690 Tm (PROFILE) Tj ET
+0.86 0.86 0.86 RG 0.7 w 56 683 m 539 683 l S
+BT 0.2 0.2 0.2 rg /F1 9.5 Tf 1 0 0 1 56 664 Tm (Frontend developer focused on React, TypeScript and interaction design.) Tj ET
+BT 0.2 0.2 0.2 rg /F1 9.5 Tf 1 0 0 1 56 649 Tm (Comfortable building maintainable interfaces and exploring AI-assisted workflows.) Tj ET
+BT 0 0 0 rg /F2 10.5 Tf 1 0 0 1 56 612 Tm (EDUCATION) Tj ET
+0.86 0.86 0.86 RG 0.7 w 56 605 m 539 605 l S
+BT 0 0 0 rg /F2 9.5 Tf 1 0 0 1 56 586 Tm (Dalian Maritime University - Computer Science) Tj ET
+BT 0.4 0.4 0.4 rg /F1 9.5 Tf 1 0 0 1 56 571 Tm (2023 - 2027 \(expected\)) Tj ET
+BT 0 0 0 rg /F2 10.5 Tf 1 0 0 1 56 534 Tm (SKILLS) Tj ET
+0.86 0.86 0.86 RG 0.7 w 56 527 m 539 527 l S
+BT 0.2 0.2 0.2 rg /F1 9.5 Tf 1 0 0 1 56 508 Tm (Frontend: React, TypeScript, JavaScript, HTML/CSS, Tailwind CSS) Tj ET
+BT 0.2 0.2 0.2 rg /F1 9.5 Tf 1 0 0 1 56 493 Tm (Tools: Vite, Git/GitHub, ESLint, Figma, Markdown) Tj ET
+BT 0.2 0.2 0.2 rg /F1 9.5 Tf 1 0 0 1 56 478 Tm (Exploring: Node.js basics, AI-assisted development, web performance) Tj ET
+BT 0 0 0 rg /F2 10.5 Tf 1 0 0 1 56 441 Tm (PROJECTS) Tj ET
+0.86 0.86 0.86 RG 0.7 w 56 434 m 539 434 l S
+BT 0 0 0 rg /F2 9.5 Tf 1 0 0 1 56 414 Tm (Personal Profile Website - 2026) Tj ET
+BT 0.2 0.2 0.2 rg /F1 9.5 Tf 1 0 0 1 56 399 Tm (A maintainable personal homepage with a browser-based admin panel.) Tj ET
+BT 0.4 0.4 0.4 rg /F1 9 Tf 1 0 0 1 56 386 Tm (React / TypeScript / Vite / IndexedDB) Tj ET
+BT 0 0 0 rg /F2 9.5 Tf 1 0 0 1 56 356 Tm (Campus Marketplace - 2025) Tj ET
+BT 0.2 0.2 0.2 rg /F1 9.5 Tf 1 0 0 1 56 341 Tm (A second-hand trading platform with search, categories and listings.) Tj ET
+BT 0.4 0.4 0.4 rg /F1 9 Tf 1 0 0 1 56 328 Tm (React / TypeScript / Supabase) Tj ET
+BT 0 0 0 rg /F2 9.5 Tf 1 0 0 1 56 298 Tm (Markdown Notes - 2024) Tj ET
+BT 0.2 0.2 0.2 rg /F1 9.5 Tf 1 0 0 1 56 283 Tm (An offline-first Markdown editor with live preview and local storage.) Tj ET
+BT 0.4 0.4 0.4 rg /F1 9 Tf 1 0 0 1 56 270 Tm (Vue 3 / TypeScript / IndexedDB) Tj ET
+0.86 0.86 0.86 RG 0.7 w 56 84 m 539 84 l S
+BT 0.5 0.5 0.5 rg /F1 8 Tf 1 0 0 1 56 70 Tm (Placeholder resume for the personal profile demo. Replace it from the admin panel.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000263 00000 n 
+0000002864 00000 n 
+0000002961 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+3063
+%%EOF
